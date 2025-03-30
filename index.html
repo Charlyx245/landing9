@@ -34,12 +34,13 @@
     .contentTitulo img {
       width: 5%;
       height: 5%;
+      margin: 20px 0; /* Ajustado para consistencia */
     }
 
     .contentBoton {
-      margin: 100px 0;
-      display: flex; /* Añadido para centrar */
-      justify-content: center; /* Centra horizontalmente */
+      margin: 30px 0; /* Reducido de 100px a 30px para mejor proporción */
+      display: flex;
+      justify-content: center;
     }
 
     .btnwsp {
@@ -47,63 +48,28 @@
       border: none;
       cursor: pointer;
       padding: 0;
-      width: 800px; /* Reducido de 1000px a 800px (20% menos) */
+      width: 800px;
     }
 
     .imgboton {
       width: 80%;
       height: 80%;
-      max-width: 800px; /* Reducido de 1000px a 800px (20% menos) */
-    }
-
-    .loadWsp {
-      margin: 20px 0;
-    }
-
-    .conecting {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    .conectingTxt {
-      font-size: 16px;
-      color: #00ff00;
-    }
-
-    .c-loader {
-      width: 20px;
-      height: 20px;
-      border: 3px solid #00ff00;
-      border-top: 3px solid transparent;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    .info {
-      font-size: 14px;
-      margin-top: 10px;
+      max-width: 800px;
     }
 
     .contentLeyenda p {
       font-size: 20px;
-      margin: 5px 0;
+      margin: 10px 0; /* Ajustado de 5px a 10px para más espacio */
       text-transform: uppercase;
     }
 
     .bono {
-      margin: 20px 0;
+      margin: 20px 0; /* Mantenido para consistencia */
     }
 
     .bono p {
       font-size: 18px;
-      margin: 5px 0;
+      margin: 8px 0; /* Ajustado de 5px a 8px para mejor espaciado */
     }
 
     .leyenda p {
@@ -114,7 +80,7 @@
     }
 
     .containerLista {
-      padding: 20px;
+      padding: 15px; /* Reducido de 20px a 15px para menos espacio */
       background-color: #333;
     }
 
@@ -138,7 +104,7 @@
     }
 
     .containerAviso {
-      padding: 20px;
+      padding: 15px; /* Reducido de 20px a 15px para consistencia */
       background-color: #111;
       font-size: 14px;
     }
@@ -160,18 +126,6 @@
         <button id="botonEnviarSolicitud" class="btnwsp">
           <img src="https://i.postimg.cc/jSvqDLVn/boton.png" class="imgboton" width="260%" height="260%" />
         </button>
-      </div>
-
-      <div class="loadWsp">
-        <div class="conecting">
-          <div class="conectingTxt">Conectando con WhatsApp...</div>
-          <div class="conectingIcon">
-            <div class="c-loader"></div>
-          </div>
-        </div>
-        <div class="info">
-          Si no se abre el enlace. Escribinos al <b>1134641413</b> para crear tu <b>usuario</b> y regalarte un Bono de Bienvenida.
-        </div>	
       </div>
 
       <div class="contentLeyenda">
