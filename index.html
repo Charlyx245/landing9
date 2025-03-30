@@ -3,228 +3,244 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Casino GANAMOS</title>
-  <link rel="icon" href="https://i.postimg.cc/pdvkPwpq/photo-2024-11-29-07-38-50-removebg-preview.png" type="image/x-icon"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+  <title>🍀 Gana365 🎰 - Click en el botón de WhatsApp</title>
 
   <style>
     body {
-      background-color: black;
-      font-family: 'Inter', sans-serif;
-      color: white;
-      text-align: center;
-    }
-
-    .logo {
-      display: flex;
-      justify-content: center;
-      margin: 5rem 0 2rem 0;
-    }
-
-    .logo img {
-      width: 10rem;
-    }
-
-    .main-title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .main-title p {
       margin: 0;
-      font-size: 40px;
-      color: #00fffb;
-      text-shadow: 0 0 5px #FF00FF, 0 0 10px #FF00FF, 0 0 20px #FF0099, 0 0 40px #FF0099;
+      padding: 0;
+      background-color: #1a1a1a;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
     }
 
-    .whatsapp {
-      margin: 3rem 0 1rem 0;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
+    .containerTop {
+      padding: 20px;
+      background-color: #222;
     }
 
-    .whatsapp-input {
-      width: 100%;
-      max-width: 300px;
-      padding: 12px;
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contentLogo img {
+      width: 120px;
+      height: 120px;
+      margin: 20px 0;
+    }
+
+    .contentTitulo img {
+      width: 5%; /* Reducido de 20% a 5% (25% del tamaño original) */
+      height: 5%; /* Reducido de 20% a 5% (25% del tamaño original) */
+    }
+
+    .contentBanner {
+      margin: 20px 0;
+    }
+
+    .visible p {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .visible ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .visible li {
       font-size: 18px;
-      color: #00FFFF;
-      background: rgba(0, 0, 0, 0.8);
-      border: 2px solid #00FFFF;
-      border-radius: 8px;
-      outline: none;
-      text-align: center;
-      box-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;
-      transition: all 0.3s ease-in-out;
+      margin: 5px 0;
     }
 
-    .whatsapp-input:focus {
-      box-shadow: 0 0 60px #00FFFF, 0 0 70px #00FFFF, 0 0 90px #0088FF;
-      border-color: #0088FF;
+    .contentBoton {
+      margin: 20px 0;
     }
 
-    .button {
-      display: inline-flex;
+    .btnwsp {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .imgboton {
+      width: 80%;
+      height: 80%;
+      max-width: 200px;
+    }
+
+    .loadWsp {
+      margin: 20px 0;
+    }
+
+    .conecting {
+      display: flex;
       align-items: center;
       justify-content: center;
-      padding: 60px 120px; /* Aumentado de 12px 24px a 60px 120px (5x) */
-      font-size: 100px; /* Aumentado de 20px a 100px (5x) */
-      font-weight: bold;
-      color: #00FFFF;
-      background: rgba(0, 0, 0, 0.8);
-      border: 10px solid #00FFFF; /* Aumentado de 2px a 10px (5x) */
-      border-radius: 40px; /* Aumentado de 8px a 40px (5x) */
-      text-transform: uppercase;
-      text-align: center;
-      cursor: pointer;
-      box-shadow: 0 0 25px #00FFFF, 0 0 50px #00FFFF; /* Aumentado de 5px 10px a 25px 50px (5x) */
-      transition: all 0.3s ease-in-out;
+      gap: 10px;
     }
 
-    .button img {
-      margin-left: 50px; /* Aumentado de 10px a 50px (5x) */
-      height: 120px; /* Aumentado de 24px a 120px (5x) */
-      filter: invert(48%) sepia(98%) saturate(2955%) hue-rotate(111deg) brightness(107%) contrast(105%);
+    .conectingTxt {
+      font-size: 16px;
+      color: #00ff00;
     }
 
-    .button:hover {
-      background: #00FFFF;
-      color: #000;
-      box-shadow: 0 0 50px #00FFFF, 0 0 100px #0088FF, 0 0 200px #0044FF; /* Aumentado 5x */
+    .c-loader {
+      width: 20px;
+      height: 20px;
+      border: 3px solid #00ff00;
+      border-top: 3px solid transparent;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
     }
 
-    .button:active {
-      transform: scale(0.95);
-      box-shadow: 0 0 25px #00FFFF, 0 0 50px #0088FF; /* Aumentado 5x */
-    }
-
-    .img_wpp {
-      padding-left: 50px; /* Aumentado de 10px a 50px (5x) */
-      text-align: center;
-      width: 150px; /* Aumentado de 30px a 150px (5x) */
-      filter: invert(48%) sepia(98%) saturate(2955%) hue-rotate(111deg) brightness(107%) contrast(105%);
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
 
     .info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: white;
+      font-size: 14px;
+      margin-top: 10px;
     }
 
-    .info p {
+    .contentLeyenda p {
       font-size: 20px;
+      margin: 5px 0;
+      text-transform: uppercase;
     }
 
-    .info h3 {
-      font-size: 30px;
-      text-align: center;
+    .bono {
+      margin: 20px 0;
     }
 
-    footer {
+    .bono p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+
+    .leyenda p {
+      background-color: #ff4444;
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .containerLista {
+      padding: 20px;
+      background-color: #333;
+    }
+
+    .containerItem {
       display: flex;
+      align-items: center;
       justify-content: center;
-      align-items: center;
-      color: #fff;
-      font-size: 20px;
-      background-color: rgba(0, 0, 0, 0.7);
-      border-radius: 5%;
+      gap: 15px;
+      max-width: 600px;
+      margin: 10px auto;
     }
 
-    footer img {
-      margin: 0 10px;
-      height: 50px;
+    .containerItem img {
+      width: 70px;
+      height: 70px;
     }
 
-    /* Mobile */
-    @media screen and (max-width: 768px) {
-      .logo img {
-        width: 7.5rem;
-      }
+    .containerItem p {
+      font-size: 16px;
+      margin: 0;
+    }
 
-      .main-title p {
-        font-size: 30px;
-      }
+    .containerAviso {
+      padding: 20px;
+      background-color: #111;
+      font-size: 14px;
+    }
 
-      .whatsapp-input {
-        max-width: 80%;
-      }
-
-      .button {
-        min-width: 600px; /* Aumentado de 120px a 600px (5x) */
-        height: 300px; /* Aumentado de 60px a 300px (5x) */
-        font-size: 100px; /* Aumentado de 20px a 100px (5x) */
-      }
-
-      .info p {
-        font-size: 25px;
-      }
-
-      .info h3 {
-        font-size: 24px;
-      }
-
-      footer {
-        flex-direction: column;
-      }
-
-      footer img {
-        margin: 10px 0;
-        height: 40px;
-      }
+    .containerAviso p {
+      margin: 5px 0;
     }
   </style>
 </head>
 <body>
-  <div class="logo">
-    <img src="https://i.postimg.cc/pdvkPwpq/photo-2024-11-29-07-38-50-removebg-preview.png" alt="Casino_ganamos">
+  <div class="containerTop">
+    <div class="content">
+      
+      <div class="contentTitulo">	
+        <img src="https://i.postimg.cc/pdvkPwpq/photo-2024-11-29-07-38-50-removebg-preview.png" width="5%" height="5%">
+        <div class="contentBanner">
+          <div class="visible">
+            <p>Jugá</p>
+            <ul>
+              <li>Tragamonedas</li>
+              <li>Ruletas</li>
+              <li>Casino en vivo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="contentBoton">	
+        <button id="botonEnviarSolicitud" class="btnwsp">
+          <img src="https://i.postimg.cc/jSvqDLVn/boton.png" class="imgboton" width="260%" height="260%" />
+        </button>
+      </div>
+
+      <div class="loadWsp">
+        <div class="conecting">
+          <div class="conectingTxt">Conectando con WhatsApp...</div>
+          <div class="conectingIcon">
+            <div class="c-loader"></div>
+          </div>
+        </div>
+        <div class="info">
+          Si no se abre el enlace. Escribinos al <b>1134641413</b> para crear tu <b>usuario</b> y regalarte un Bono de Bienvenida.
+        </div>	
+      </div>
+
+      <div class="contentLeyenda">
+        <p>HACÉ CLIC EN EL BOTÓN PARA</p>
+        <p>CREAR TU USUARIO</p>
+      </div>
+
+      <div class="bono">
+        <div class="leyenda">
+          <p><b>TODOS LOS DÍAS</b></p>
+        </div>
+        <p><b>10% EN TU PRIMERA CARGA</b></p>
+        <p>Mínimo de carga <b>$3.000</b></p>
+      </div>
+
+    </div>
   </div>
 
-  <div class="main-title">
-    <p>¡CREA TU USUARIO por WhatsApp!</p>
-    <p>Escribe tu nombre</p>
+  <div class="containerLista">
+    <div class="containerItem">
+      <img src="img/ic1.png" width="70px" height="70px">	
+      <p>Aceptamos transferencias de <br>cualquier banco, CBU o CVU.</p>
+    </div>
   </div>
 
-  <div class="whatsapp">
-    <input type="text" id="usernameInput" class="whatsapp-input" placeholder="Nombre">
+  <div class="containerLista">
+    <div class="containerItem">
+      <img src="img/ic2.png" width="70px" height="70px">	
+      <p>Estamos cargando y pagando<br>las 24 horas</p>
+    </div>
   </div>
 
-  <div class="whatsapp">
-    <button class="button" id="whatsappButton">
-      CREAR USUARIO 
-      <img class="img_wpp" src="./Casino_ganamos/whatsapp-64.png" alt="Whatsapp">
-    </button>
+  <div class="containerAviso">	
+    <p>Jugar compulsivamente es perjudicial para la salud.</p>
+    <p>Prohibido el juego de azar a menores de 18 años.</p>
   </div>
-
-  <div class="info">
-    <p>Carga mínima: $3000</p>
-    <h3>
-      RULETA EN VIVO | +1000 SLOTS <br>
-      APUESTAS DEPORTIVAS <br>
-      Y MUCHA DIVERSIÓN
-    </h3>
-  </div>
-
-  <footer>
-    <p>Cajero Oficial de </p>
-  </footer>
 
   <script>
-    document.getElementById("whatsappButton").addEventListener("click", function() {
-      var username = document.getElementById("usernameInput").value.trim();
-      var telefono = "3517040939";
-      var mensaje = "Hola! Quiero crear un usuario. Mi *nombre* es: " + username;
-      var link = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
-
-      let clickCount = localStorage.getItem("clickCount") || 0;
-      clickCount++;
-      localStorage.setItem("clickCount", clickCount);
-      console.log("Número de clics en 'CREAR USUARIO':", clickCount);
-
-      window.open(link, '_blank');
+    document.getElementById('botonEnviarSolicitud').addEventListener('click', function () {
+      const telefono = '5491133955099';
+      const mensaje = 'Hola quiero crear un usuario! Mi nombre es:';
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=${telefono}&text=${encodeURIComponent(mensaje)}`;
+      window.location.href = whatsappUrl;
     });
   </script>
 </body>
